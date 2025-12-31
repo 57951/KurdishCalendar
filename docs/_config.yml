@@ -1,0 +1,36 @@
+# Site settings
+title: Kurdish Calendar for .NET
+description: Fully featured Kurdish calendar library for .NET applications
+theme: jekyll-theme-cayman
+baseurl: /KurdishCalendar
+url: https://57951.github.io
+
+# Repository information (required for local builds and GitHub links)
+repository: 57951/KurdishCalendar
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Defaults - tells Jekyll to use the theme's default layout for all markdown files
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

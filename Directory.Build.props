@@ -1,0 +1,22 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <!-- Only generate XML docs for the Core library -->
+    <GenerateDocumentationFile Condition="$(MSBuildProjectName.Contains('Core'))">true</GenerateDocumentationFile>
+    
+    <!-- NuGet package metadata -->
+    <Authors>Agent 57951</Authors>
+    <Copyright>Copyright © 2025 Agent 57951</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://57951.github.io/KurdishCalendar</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/57951/KurdishCalendar</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>kurdish;calendar;date;sorani;kurmanji;hawrami;nowruz;solar-hijri;kurdistan;astronomical;equinox;nowruz;newroz</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+</Project>

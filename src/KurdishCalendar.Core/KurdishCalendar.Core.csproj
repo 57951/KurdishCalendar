@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>KurdishCalendar.Core</PackageId>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Package Information -->
+    <PackageId>KurdishCalendar.Core</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Agent 57951</Authors>
+    <Product>Kurdish Calendar Library</Product>
+    <Description>A reusable .NET library for Kurdish calendar date handling, conversion, and formatting with support for Sorani, Kurmanji, and Hawrami dialects in both Latin and Arabic scripts. Includes simplified and astronomical calculations for maximum accuracy.</Description>
+    <Copyright>Copyright © 2025 Agent 57951</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/57951/KurdishCalendar</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/57951/KurdishCalendar</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>kurdish;calendar;date;sorani;kurmanji;hawrami;nowruz;solar-hijri;hijri;kurdistan;erbil;astronomy;gregorian;astronomical;nowruz;newroz;equinox</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release with support for Sorani, Kurmanji, and Hawrami dialects in both Latin and Arabic scripts. Includes simplified and astronomical date calculations.</PackageReleaseNotes>
+
+    <!-- Optional: Icon -->
+    <PackageIcon>icon.png</PackageIcon>
+    
+    <!-- Repository Information -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <!-- Include README in package -->
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE.md" Pack="true" PackagePath="\" />
+    <!-- Optional: Include icon -->
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
